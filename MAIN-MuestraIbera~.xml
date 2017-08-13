@@ -482,14 +482,36 @@
    </NODE>
    <LINK srcnodeid="56" srcpinname="Y Output Value" dstnodeid="40" dstpinname="playAudio">
    </LINK>
-   <NODE systemname="SUB-QRcode" filename="SUB-QRcode.v4p" nodename="SUB-QRcode.v4p" componentmode="Hidden" id="60">
-   <BOUNDS type="Node" left="1230" top="5085" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="webcamInput" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="43" srcpinname="webcam2" dstnodeid="50" dstpinname="Layers">
    </LINK>
    <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="56" dstpinname="Y Input Value">
    </LINK>
+   <NODE systemname="ZXing (String 0.1)" filename="%VVVV%\packs\kiilopack\plugins\ZXing.csproj" nodename="ZXing (String 0.1)" componentmode="Hidden" id="57">
+   <BOUNDS type="Node" left="8490" top="570" width="4245" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="raw BMP" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="String" visible="1">
+   </PIN>
+   <PIN pinname="Status" visible="1">
+   </PIN>
+   <PIN pinname="Enable">
+   </PIN>
+   <PIN pinname="Try Hard" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Float X" visible="1">
+   </PIN>
+   <PIN pinname="Float Y" visible="1">
+   </PIN>
+   <PIN pinname="PointsXY" visible="1">
+   </PIN>
+   <PIN pinname="Points Bin Size" visible="1">
+   </PIN>
+   </NODE>
    </PATCH>

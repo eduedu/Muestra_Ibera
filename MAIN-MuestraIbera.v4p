@@ -486,4 +486,8 @@
    </LINK>
    <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="56" dstpinname="Y Input Value">
    </LINK>
+   <NODE systemname="SUB-QRcode" filename="SUB-QRcode.v4p" nodename="SUB-QRcode.v4p" componentmode="Hidden" id="59">
+   <BOUNDS type="Node" left="2745" top="1035" width="100" height="100">
+   </BOUNDS>
+   </NODE>
    </PATCH>
