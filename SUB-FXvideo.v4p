@@ -61,6 +61,8 @@
    </PIN>
    <PIN pinname="Fader" visible="1">
    </PIN>
+   <PIN pinname="Control" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="17" srcpinname="Output" dstnodeid="18" dstpinname="Input 2">
    </LINK>
@@ -132,6 +134,8 @@
    <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Fader" visible="1">
+   </PIN>
+   <PIN pinname="Control" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="22" srcpinname="Output" dstnodeid="21" dstpinname="Input 2">
@@ -261,7 +265,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Decay" slicecount="1" values="5" visible="1">
+   <PIN pinname="Decay" slicecount="1" visible="1" values="5">
    </PIN>
    </NODE>
    <LINK srcnodeid="1" srcpinname="Output Node" dstnodeid="18" dstpinname="Input 1">
@@ -459,7 +463,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5100" top="5325" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.53">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.84">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -489,5 +493,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="63" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output Node" dstnodeid="18" dstpinname="Control">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Output Node" dstnodeid="21" dstpinname="Control">
    </LINK>
    </PATCH>

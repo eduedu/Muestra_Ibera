@@ -589,6 +589,8 @@
    </PIN>
    <PIN pinname="Driver" visible="1">
    </PIN>
+   <PIN pinname="Preview" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="49" dstpinname="Enabled">
    </LINK>
@@ -638,8 +640,6 @@
    </NODE>
    <LINK srcnodeid="51" srcpinname="Video Output" dstnodeid="31" dstpinname="Video">
    </LINK>
-   <LINK srcnodeid="49" srcpinname="Video" dstnodeid="51" dstpinname="Video Input">
-   </LINK>
    <LINK srcnodeid="51" srcpinname="Changed Pixels" dstnodeid="32" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="40" srcpinname="Y Output Value" dstnodeid="51" dstpinname="Show Filtered">
@@ -661,5 +661,7 @@
    <LINK srcnodeid="52" srcpinname="Y Output Value" dstnodeid="51" dstpinname="Threshold">
    </LINK>
    <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="51" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Video" dstnodeid="51" dstpinname="Video Input">
    </LINK>
    </PATCH>

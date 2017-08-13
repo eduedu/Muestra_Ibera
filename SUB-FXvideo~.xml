@@ -115,6 +115,10 @@
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
+   <PIN pinname="Highlights" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Midtones" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <NODE systemname="Mix (EX9.Texture Mixer)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Mixer\Mix\Mix (EX9.Texture Mixer).v4p" nodename="Mix (EX9.Texture Mixer)" componentmode="Hidden" id="21">
    <BOUNDS type="Node" left="8460" top="7620" width="100" height="100">
