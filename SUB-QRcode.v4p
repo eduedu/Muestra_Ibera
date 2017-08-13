@@ -634,16 +634,6 @@
    </NODE>
    <LINK srcnodeid="33" srcpinname="Layer" dstnodeid="55" dstpinname="Input Node">
    </LINK>
-   <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="60">
-   <BOUNDS type="Node" left="13155" top="8190" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Send String" slicecount="1" values="QRcode">
-   </PIN>
-   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="39" srcpinname="Output" dstnodeid="60" dstpinname="Input Value">
-   </LINK>
    <NODE systemname="ZXing (String 0.1)" filename="ZXing.csproj" nodename="ZXing (String 0.1)" componentmode="Hidden" id="61">
    <BOUNDS type="Node" left="12480" top="2640" width="2085" height="270">
    </BOUNDS>
@@ -679,5 +669,25 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="61" srcpinname="Status" dstnodeid="40" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="AsValue (String)" nodename="AsValue (String)" componentmode="Hidden" id="62">
+   <BOUNDS type="Node" left="13455" top="8010" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="Output" dstnodeid="62" dstpinname="Input">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="63">
+   <BOUNDS type="Node" left="13185" top="8775" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="codigoQR">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="62" srcpinname="Output" dstnodeid="63" dstpinname="Input Value">
    </LINK>
    </PATCH>
