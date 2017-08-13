@@ -163,7 +163,7 @@
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Fullscreen" visible="1">
+   <PIN pinname="Fullscreen" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="28">
@@ -271,45 +271,5 @@
    <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="19" dstpinname="playA">
    </LINK>
    <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="19" dstpinname="playB">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="34" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3495" top="5775" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3495" top="5775" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Fullscreen">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="35" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8430" top="5640" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="8430" top="5640" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="29" dstpinname="Fullscreen">
    </LINK>
    </PATCH>

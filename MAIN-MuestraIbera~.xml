@@ -4,7 +4,7 @@
    </BOUNDS>
    <PACK Name="addonpack" Version="34.1.0">
    </PACK>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="0">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="0">
    <BOUNDS type="Node" left="1740" top="6435" width="1500" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="1740" top="6435" width="2400" height="1800">
@@ -15,7 +15,7 @@
    </PIN>
    <PIN pinname="Fullscreen Backbuffer Count" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Device" slicecount="1" values="1">
+   <PIN pinname="Device" slicecount="1" values="-1">
    </PIN>
    <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="NONE">
    </PIN>
@@ -25,7 +25,7 @@
    </PIN>
    <PIN pinname="Clear Depth Buffer" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Fullscreen" slicecount="1" values="0" visible="1">
+   <PIN pinname="Fullscreen" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="1">
@@ -154,7 +154,7 @@
    </NODE>
    <LINK srcnodeid="24" srcpinname="Output Node" dstnodeid="1" dstpinname="Texture">
    </LINK>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="29">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="29">
    <BOUNDS type="Node" left="6315" top="6510" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="6315" top="6510" width="2400" height="1800">
@@ -277,7 +277,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3495" top="5775" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -287,7 +287,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="34" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Fullscreen">
@@ -306,6 +306,8 @@
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="29" dstpinname="Fullscreen">
