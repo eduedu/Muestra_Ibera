@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
    <PATCH nodename="C:\Users\Eduardo\Documents\Ibera\Muestra_Ibera\SUB-switchVideo.v4p" systemname="SUB-switchVideo" filename="C:\Users\Eduardo\Google Drive\Ibera\SUB-switchVideo.v4p" bgcolor="15198183">
-   <BOUNDS type="Window" left="825" top="3015" width="19440" height="11040">
+   <BOUNDS type="Window" left="0" top="405" width="13965" height="9705">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.1.0">
    </PACK>
@@ -71,7 +71,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1620" top="4530" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values=".avi">
+   <PIN pinname="Input String" slicecount="1" visible="1" values=".mp4">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -299,7 +299,7 @@
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="prefijo">
    </PIN>
-   <PIN pinname="Input String" slicecount="1" values="zvideo">
+   <PIN pinname="Input String" slicecount="1" values="video">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
