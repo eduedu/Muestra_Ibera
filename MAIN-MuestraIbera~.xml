@@ -346,4 +346,24 @@
    </NODE>
    <LINK srcnodeid="40" srcpinname="posAudio" dstnodeid="42" dstpinname="Y Input Value">
    </LINK>
+   <NODE systemname="SUB-webcams" filename="SUB-webcams.v4p" nodename="SUB-webcams.v4p" componentmode="Hidden" id="43">
+   <BOUNDS type="Node" left="135" top="1260" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="1455" top="435" width="11175" height="9915">
+   </BOUNDS>
+   <PIN pinname="movimiento" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="44">
+   <BOUNDS type="Node" left="120" top="3045" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="movimiento">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="43" srcpinname="movimiento" dstnodeid="44" dstpinname="Input Value">
+   </LINK>
    </PATCH>
