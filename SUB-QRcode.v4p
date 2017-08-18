@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
    <PATCH nodename="C:\Users\Eduardo\Documents\Ibera\Muestra_Ibera\SUB-QRcode.v4p" systemname="SUB-QRcode" filename="C:\Users\Eduardo\Google Drive\Ibera\SUB-QRcode.v4p" scrollx="45" scrolly="0" bgcolor="15132390">
-   <BOUNDS type="Window" left="2520" top="0" width="17850" height="10725">
+   <BOUNDS type="Window" left="2520" top="0" width="16395" height="8460">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.1.0">
    </PACK>
@@ -43,7 +43,7 @@
    </BOUNDS>
    <BOUNDS height="6360" left="1785" top="3105" type="Window" width="6120">
    </BOUNDS>
-   <BOUNDS height="3900" left="2310" top="5250" type="Box" width="3915">
+   <BOUNDS height="1650" left="2310" top="5250" type="Box" width="2100">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -335,9 +335,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="38">
-   <BOUNDS type="Node" left="13110" top="5130" width="100" height="100">
+   <BOUNDS type="Node" left="13305" top="4440" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="13110" top="5130" width="990" height="1065">
+   <BOUNDS type="Box" left="13305" top="4440" width="990" height="1065">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="4">
    </PIN>
@@ -347,9 +347,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="37">
-   <BOUNDS type="Node" left="14745" top="5130" width="100" height="100">
+   <BOUNDS type="Node" left="14940" top="4440" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="14745" top="5130" width="990" height="1065">
+   <BOUNDS type="Box" left="14940" top="4440" width="990" height="1065">
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="4">
    </PIN>
@@ -441,9 +441,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="28">
-   <BOUNDS type="Node" left="16830" top="1800" width="100" height="100">
+   <BOUNDS type="Node" left="15075" top="1725" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="16830" top="1800" width="480" height="480">
+   <BOUNDS type="Box" left="15075" top="1725" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -515,7 +515,7 @@
    <LINK srcnodeid="6" srcpinname="Color Output" dstnodeid="11" dstpinname="Fore Color">
    </LINK>
    <NODE systemname="AsValue (String)" nodename="AsValue (String)" componentmode="Hidden" id="62">
-   <BOUNDS type="Node" left="13455" top="8010" width="100" height="100">
+   <BOUNDS type="Node" left="13380" top="6585" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -525,7 +525,7 @@
    <LINK srcnodeid="39" srcpinname="Output" dstnodeid="62" dstpinname="Input">
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="63">
-   <BOUNDS type="Node" left="13185" top="8775" width="100" height="100">
+   <BOUNDS type="Node" left="13110" top="7350" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
@@ -535,7 +535,7 @@
    <LINK srcnodeid="62" srcpinname="Output" dstnodeid="63" dstpinname="Input Value">
    </LINK>
    <NODE systemname="Beep (Windows)" nodename="Beep (Windows)" componentmode="Hidden" id="64">
-   <BOUNDS type="Node" left="14850" top="8880" width="100" height="100">
+   <BOUNDS type="Node" left="14775" top="7455" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Duration" slicecount="1" values="0.05">
    </PIN>
@@ -545,7 +545,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="65">
-   <BOUNDS type="Node" left="14700" top="7875" width="100" height="100">
+   <BOUNDS type="Node" left="14625" top="6450" width="100" height="100">
    </BOUNDS>
    <PIN pinname="OnChange" visible="1">
    </PIN>
@@ -553,7 +553,7 @@
    </PIN>
    </NODE>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="66">
-   <BOUNDS type="Node" left="14805" top="8190" width="100" height="100">
+   <BOUNDS type="Node" left="14730" top="6765" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -567,17 +567,15 @@
    <LINK srcnodeid="62" srcpinname="Output" dstnodeid="65" dstpinname="Input">
    </LINK>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="67">
-   <BOUNDS type="Node" left="11130" top="6780" width="100" height="100">
+   <BOUNDS type="Node" left="10905" top="6780" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="11130" top="6780" width="1500" height="480">
+   <BOUNDS type="Box" left="10905" top="6780" width="1500" height="480">
    </BOUNDS>
-   <PIN pinname="Input String" visible="1">
+   <PIN pinname="Input String" visible="1" slicecount="1" values="text">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|qr code|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="39" srcpinname="Output" dstnodeid="67" dstpinname="Input String">
-   </LINK>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="68">
    <BOUNDS type="Node" left="7290" top="4935" width="100" height="100">
    </BOUNDS>
@@ -665,5 +663,7 @@
    <LINK srcnodeid="72" srcpinname="Status" dstnodeid="40" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="23" srcpinname="Output" dstnodeid="72" dstpinname="raw BMP">
+   </LINK>
+   <LINK srcnodeid="39" srcpinname="Output" dstnodeid="67" dstpinname="Input String">
    </LINK>
    </PATCH>
