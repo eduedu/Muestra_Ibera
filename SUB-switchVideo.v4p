@@ -1,8 +1,8 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\Users\Eduardo\Documents\Ibera\Muestra_Ibera\SUB-switchVideo.v4p" systemname="SUB-switchVideo" filename="C:\Users\Eduardo\Google Drive\Ibera\SUB-switchVideo.v4p" bgcolor="15198183">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="C:\Users\Eduardo\Documents\Ibera\Muestra_Ibera1\SUB-switchVideo.v4p" systemname="SUB-switchVideo" filename="C:\Users\Eduardo\Google Drive\Ibera\SUB-switchVideo.v4p" bgcolor="15198183">
    <BOUNDS type="Window" left="810" top="195" width="13530" height="9705">
    </BOUNDS>
-   <PACK Name="addonpack" Version="34.1.0">
+   <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="795" top="4350" width="100" height="100">
@@ -166,36 +166,18 @@
    <PIN pinname="Input String" visible="1" slicecount="1" values="1.avi">
    </PIN>
    </NODE>
-   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="14">
-   <BOUNDS type="Node" left="6000" top="3285" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="6000" top="3285" width="1185" height="1560">
-   </BOUNDS>
-   <PIN pinname="Rows" slicecount="1" values="5">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
-   </PIN>
-   <PIN pinname="Input String" slicecount="5" values="audio1,audio2,audio3,audio4,audio5">
-   </PIN>
-   <PIN pinname="Output String" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="13">
    <BOUNDS type="Node" left="6000" top="4995" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="5" values="audio1,audio2,audio3,audio4,audio5">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    <PIN pinname="Index" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="14" srcpinname="Output String" dstnodeid="13" dstpinname="Input">
-   </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="15">
-   <BOUNDS type="Node" left="6615" top="5895" width="100" height="100">
+   <BOUNDS type="Node" left="5925" top="6390" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -205,11 +187,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="16">
-   <BOUNDS type="Box" left="6915" top="5385" width="795" height="240">
+   <BOUNDS type="Box" left="6225" top="5895" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6915" top="5385" width="0" height="0">
+   <BOUNDS type="Node" left="6225" top="5895" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values=".wav">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="a.wav">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -221,9 +203,9 @@
    <LINK srcnodeid="16" srcpinname="Output String" dstnodeid="15" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="17">
-   <BOUNDS type="Box" left="5850" top="6825" width="1455" height="240">
+   <BOUNDS type="Box" left="5685" top="7110" width="2190" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5850" top="6825" width="0" height="0">
+   <BOUNDS type="Node" left="5685" top="7110" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -333,7 +315,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3315" top="930" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="4">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="9">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -447,5 +429,111 @@
    <LINK srcnodeid="13" srcpinname="Output" dstnodeid="34" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="34" srcpinname="Output" dstnodeid="15" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="38">
+   <BOUNDS type="Node" left="6060" top="1890" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6060" top="1890" width="1260" height="255">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="prefijo">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="audio">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="37">
+   <BOUNDS type="Node" left="4785" top="3195" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="zvideo">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="36">
+   <BOUNDS type="Node" left="4905" top="615" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4905" top="615" width="1260" height="255">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="dir">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="media\">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="35">
+   <BOUNDS type="Node" left="4995" top="2190" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="38" srcpinname="Output String" dstnodeid="35" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Output" dstnodeid="37" dstpinname="Input 2">
+   <LINKPOINT x="5130" y="2790">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Output" dstnodeid="13" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="39">
+   <BOUNDS type="Box" left="8835" top="6915" width="1800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8835" top="6915" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="audio2">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="41">
+   <BOUNDS type="Node" left="8175" top="5925" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="audio1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="40">
+   <BOUNDS type="Box" left="8475" top="5430" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8475" top="5430" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="b.wav">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="40" srcpinname="Output String" dstnodeid="41" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Output" dstnodeid="41" dstpinname="Input 1">
+   <LINKPOINT x="5295" y="6225">
+   </LINKPOINT>
+   <LINKPOINT x="6870" y="5625">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Output" dstnodeid="39" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Output String" dstnodeid="35" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Output String" dstnodeid="37" dstpinname="Input 1">
    </LINK>
    </PATCH>

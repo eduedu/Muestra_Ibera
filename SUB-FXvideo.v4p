@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="C:\Users\Eduardo\Documents\Ibera\Muestra_Ibera\SUB-FXvideo.v4p" systemname="SUB-FXvideo" filename="C:\Users\Eduardo\Google Drive\Ibera\SUB-FXvideo.v4p" scrollx="75" scrolly="0">
+   <PATCH nodename="C:\Users\Eduardo\Documents\Ibera\Muestra_Ibera1\SUB-FXvideo.v4p" systemname="SUB-FXvideo" filename="C:\Users\Eduardo\Google Drive\Ibera\SUB-FXvideo.v4p" scrollx="75" scrolly="0">
    <BOUNDS type="Window" left="6945" top="315" width="11865" height="9870">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -59,9 +59,9 @@
    </PIN>
    <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Fader" visible="1">
+   <PIN pinname="Fader" visible="1" slicecount="1" values="0.017">
    </PIN>
-   <PIN pinname="Control" visible="1">
+   <PIN pinname="Control" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="17" srcpinname="Output" dstnodeid="18" dstpinname="Input 2">
@@ -135,7 +135,7 @@
    </PIN>
    <PIN pinname="Fader" visible="1">
    </PIN>
-   <PIN pinname="Control" visible="1">
+   <PIN pinname="Control" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="22" srcpinname="Output" dstnodeid="21" dstpinname="Input 2">
@@ -446,12 +446,6 @@
    <LINKPOINT x="7837" y="6585">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="59" srcpinname="Output" dstnodeid="18" dstpinname="Fader">
-   <LINKPOINT x="4170" y="7290">
-   </LINKPOINT>
-   <LINKPOINT x="2265" y="6900">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="59" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="61" dstpinname="Input 2">
@@ -463,13 +457,15 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5100" top="5325" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.84">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="61" dstpinname="Input 1">
@@ -493,6 +489,8 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="63" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="59" srcpinname="Output" dstnodeid="18" dstpinname="Fader">
    </LINK>
    <LINK srcnodeid="1" srcpinname="Output Node" dstnodeid="18" dstpinname="Control">
    </LINK>

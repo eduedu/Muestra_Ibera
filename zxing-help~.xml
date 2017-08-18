@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta31.2.dtd" >
    <PATCH nodename="C:\vvvv\vvvv_45beta31.2_x86\kiilopack\plugins\zxing-help.v4p" systemname="zxing-help" filename="C:\vvvv\vvvv_45beta31_x86\kiilopack\plugins\zxing-help.v4p">
-   <BOUNDS type="Window" left="29055" top="210" width="10755" height="8220">
+   <BOUNDS type="Window" left="29055" top="210" width="10755" height="10065">
    </BOUNDS>
    <NODE systemname="About (VVVV)" nodename="About (VVVV)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="195" top="210" width="100" height="100">
@@ -11,7 +11,7 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)">
    <BOUNDS type="Node" left="4110" top="6585" width="630" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="4110" top="6585" width="5985" height="810">
+   <BOUNDS type="Box" left="4110" top="6585" width="6030" height="2130">
    </BOUNDS>
    <PIN pinname="Input String" visible="1">
    </PIN>
@@ -22,6 +22,8 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="6">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="15" systemname="IOBox (String)">
@@ -48,16 +50,6 @@
    </NODE>
    <LINK srcnodeid="0" srcpinname="Version" dstnodeid="15" dstpinname="Input String" linkstyle="PolyLine">
    </LINK>
-   <NODE systemname="AsRaw (EX9.Texture)" nodename="AsRaw (EX9.Texture)" componentmode="Hidden" id="18">
-   <BOUNDS type="Node" left="3975" top="1665" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Read" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InABox" id="19">
    <BOUNDS type="Node" left="195" top="4485" width="100" height="100">
    </BOUNDS>
@@ -99,15 +91,9 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="BlinkStyle" slicecount="1" values="Hot">
+   <PIN pinname="BlinkStyle" slicecount="1" values="BlinkFast">
    </PIN>
    </NODE>
-   <LINK srcnodeid="22" srcpinname="Output" dstnodeid="18" dstpinname="Read" linkstyle="Bezier">
-   <LINKPOINT x="4815" y="1495">
-   </LINKPOINT>
-   <LINKPOINT x="4680" y="1550">
-   </LINKPOINT>
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="23" systemname="IOBox (String)">
    <BOUNDS type="Node" left="4710" top="1635" width="1425" height="270">
    </BOUNDS>
@@ -177,7 +163,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Point (GDI)" nodename="Point (GDI)" componentmode="Hidden" id="34" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="1680" top="1920" width="100" height="100">
+   <BOUNDS type="Node" left="1680" top="1920" width="1875" height="270">
    </BOUNDS>
    <PIN pinname="X" visible="1">
    </PIN>
@@ -186,18 +172,6 @@
    <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="34" dstpinname="X" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="6150" y="4218">
-   </LINKPOINT>
-   <LINKPOINT x="1095" y="3613">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="30" srcpinname="Y Output Value" dstnodeid="34" dstpinname="Y" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="7835" y="4208">
-   </LINKPOINT>
-   <LINKPOINT x="1210" y="3623">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="GDITexture (EX9.Texture)" nodename="GDITexture (EX9.Texture)" componentmode="Hidden" id="35" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="3015" top="2700" width="100" height="100">
    </BOUNDS>
@@ -295,7 +269,7 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="S+H (Animation)" nodename="S+H (Animation)" componentmode="Hidden" id="39">
-   <BOUNDS type="Node" left="7095" top="3840" width="100" height="100">
+   <BOUNDS type="Node" left="5205" top="3840" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Set" visible="1" slicecount="1" values="1">
    </PIN>
@@ -305,7 +279,7 @@
    </PIN>
    </NODE>
    <NODE systemname="S+H (Animation)" nodename="S+H (Animation)" componentmode="Hidden" id="40">
-   <BOUNDS type="Node" left="8565" top="3825" width="100" height="100">
+   <BOUNDS type="Node" left="6675" top="3855" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Set" visible="1" slicecount="1" values="1">
    </PIN>
@@ -323,9 +297,9 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -353,7 +327,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="raw BMP" visible="1">
+   <PIN pinname="raw BMP" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="String" visible="1">
    </PIN>
@@ -374,12 +348,6 @@
    <PIN pinname="Points Bin Size" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="1" dstpinname="raw BMP" linkstyle="Bezier">
-   <LINKPOINT x="4045" y="2218">
-   </LINKPOINT>
-   <LINKPOINT x="4415" y="2343">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="1" srcpinname="String" dstnodeid="26" dstpinname="Input" linkstyle="Bezier">
    <LINKPOINT x="4440" y="3375">
    </LINKPOINT>
@@ -397,31 +365,33 @@
    <NODE systemname="VideoIn (DShow9)" nodename="VideoIn (DShow9)" componentmode="Hidden" id="43">
    <BOUNDS type="Node" left="3885" top="180" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Video Format" slicecount="1" values="RGB24">
+   <PIN pinname="Video Format" slicecount="1" values="YUY2">
    </PIN>
    <PIN pinname="Video" visible="1">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="1080">
+   <PIN pinname="Width" slicecount="1" values="1280">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Height" slicecount="1" values="920">
+   <PIN pinname="Height" slicecount="1" values="1024">
    </PIN>
    <PIN pinname="Framerate" slicecount="1" values="12">
    </PIN>
-   <PIN pinname="Brightness" slicecount="1" values="150">
+   <PIN pinname="Brightness" slicecount="1" values="63">
    </PIN>
-   <PIN pinname="Contrast" slicecount="1" values="59">
+   <PIN pinname="Contrast" slicecount="1" values="63">
    </PIN>
-   <PIN pinname="Gamma" slicecount="1" values="2">
+   <PIN pinname="Gamma" slicecount="1" values="247">
    </PIN>
-   <PIN pinname="WhiteBalance" slicecount="1" values="5170">
+   <PIN pinname="WhiteBalance" slicecount="1" values="247">
    </PIN>
-   <PIN pinname="Sharpness" slicecount="1" values="2">
+   <PIN pinname="Sharpness" slicecount="1" values="7">
    </PIN>
-   <PIN pinname="Hue" slicecount="1" values="59">
+   <PIN pinname="Hue" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Saturation" slicecount="1" values="0">
+   <PIN pinname="Saturation" slicecount="1" values="63">
+   </PIN>
+   <PIN pinname="Driver" slicecount="1" values="|Integrated Camera|">
    </PIN>
    </NODE>
    <NODE systemname="VideoTexture (EX9.Texture VMR9)" nodename="VideoTexture (EX9.Texture VMR9)" componentmode="Hidden" id="44">
@@ -433,8 +403,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="43" srcpinname="Video" dstnodeid="44" dstpinname="Video">
-   </LINK>
-   <LINK srcnodeid="44" srcpinname="Texture Out" dstnodeid="18" dstpinname="Texture" linkstyle="PolyLine">
    </LINK>
    <LINK srcnodeid="44" srcpinname="Texture Out" dstnodeid="20" dstpinname="Texture" linkstyle="Bezier" hiddenwhenlocked="1">
    <LINKPOINT x="3960" y="1898">
@@ -457,5 +425,45 @@
    <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="26" dstpinname="Set">
    </LINK>
    <LINK srcnodeid="40" srcpinname="Output" dstnodeid="30" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="45">
+   <BOUNDS type="Node" left="1725" top="1455" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="Output" dstnodeid="45" dstpinname="XY">
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="X" dstnodeid="34" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="Y" dstnodeid="34" dstpinname="Y">
+   </LINK>
+   <NODE id="18" systemname="AsRaw (EX9.Texture)" nodename="AsRaw (EX9.Texture)" componentmode="Hidden">
+   <BOUNDS type="Node" left="3975" top="1665" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Read" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="44" srcpinname="Texture Out" dstnodeid="18" dstpinname="Texture" linkstyle="PolyLine">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="1" dstpinname="raw BMP" linkstyle="Bezier">
+   <LINKPOINT x="4045" y="2218">
+   </LINKPOINT>
+   <LINKPOINT x="4415" y="2343">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Output" dstnodeid="18" dstpinname="Read" linkstyle="Bezier">
+   <LINKPOINT x="4815" y="1495">
+   </LINKPOINT>
+   <LINKPOINT x="4680" y="1550">
+   </LINKPOINT>
    </LINK>
    </PATCH>
